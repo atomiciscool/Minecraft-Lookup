@@ -1,0 +1,270 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background gradient */
+body {
+    font-family: 'Minecraft', sans-serif;
+    background: linear-gradient(135deg, #00A2D4, #007BCF);
+    background-size: 200% 200%;
+    animation: gradient 10s infinite;
+    color: #FFF;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Style the navigation bar */
+nav {
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-container button, .nav-links a {
+    background-color: #007BCF;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav-container button:hover, .nav-links a:hover {
+    background-color: #005daa;
+    transition: background-color 0.2s;
+}
+
+/* Style the main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Style the input and button */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    transition: background-color 0.2s;
+}
+
+input[type="text"]:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#lookupButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#lookupButton:hover {
+    background-color: #45a049;
+}
+
+/* Style the result section */
+.result {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.player-info, .player-skin {
+    flex-basis: calc(50% - 20px);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+    text-align: left;
+    margin: 10px;
+}
+
+.player-info h2, .player-skin h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the skin image */
+#skinImage {
+    max-width: 100%;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* Style the footer */
+footer {
+    background: #333;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info li {
+    margin: 5px 0;
+}
+
+.footer-info a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    height: auto;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+}
+
+/* Add this CSS to your style.css file */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+}
+
+.container h1 {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    max-width: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.container a {
+    color: #007BCF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .profile-picture {
+        max-width: 150px;
+    }
+
+    .container p, .container ul li {
+        font-size: 16px;
+    }
+}

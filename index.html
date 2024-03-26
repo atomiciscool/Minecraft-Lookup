@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Username Lookup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <button id="homeButton" onclick="window.location.href = 'index.html'">Home</button>
+            <div class="nav-links">
+                <a href="https://github.com">GitHub</a>
+                <a href="https://replit.com">Replit</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Minecraft Username Lookup</h1>
+        <div class="input-container">
+            <input type="text" id="usernameInput" placeholder="Enter Minecraft Username">
+            <button id="lookupButton">Lookup</button>
+        </div>
+        <div class="result">
+            <div class="player-info">
+                <h2>Player Information</h2>
+                <p><strong>Username:</strong> <span id="playerUsername">Steve</span></p>
+                <p><strong>UUID:</strong> <span id="playerUUID">8667ba71-b85a-4004-af54-457a9734eed7</span></p>
+            </div>
+            <div class="player-skin">
+                <h2>Player Skin</h2>
+                <img id="skinImage" src="https://crafatar.com/renders/body/8667ba71-b85a-4004-af54-457a9734eed7?overlay" alt="Player Skin">
+                <div id="skinHistory"></div> <!-- Skin history section shit which I will add in the future-->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="aboutme.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="https://i.imgur.com/gi2K4ot.png" alt="NameMC Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

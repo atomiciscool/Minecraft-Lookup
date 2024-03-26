@@ -1,0 +1,31 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $data = json_decode(file_get_contents("php://input"));
+    
+    $name = $data->name;
+    $email = $data->email;
+    $message = $data->message;
+
+    // Validate and sanitize input fields (you can use PHP filter functions btw)
+    // Example validation:
+    if (empty($name) || empty($email) || empty($message)) {
+        $response = ["success" => false];
+    } else {
+        // Send the fucking email (you can use PHP's mail() function or a library like PHPMailer...)
+        // Here's your Example:
+        $to = "your-email@example.com";
+        $subject = "New Contact Form Submission";
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $message = wordwrap($message, 70, "\r\n");
+        
+        if (mail($to, $subject, $message, $headers)) {
+            $response = ["success" => true];
+        } else {
+            $response = ["success" => false];
+        }
+    }
+
+    echo json_encode($response);
+}
+?>

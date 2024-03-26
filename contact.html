@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - WiiZARDD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <button id="homeButton" onclick="window.location.href = 'index.html'">Home</button>
+            <div class="nav-links">
+                <a href="https://github.com">GitHub</a>
+                <a href="https://replit.com">Replit</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Me</h1>
+        <p>If you have any questions, feedback, or just want to say hello, feel free to get in touch with me using the contact form below:</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Explore More</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="namemc_logo.png" alt="NameMC Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
